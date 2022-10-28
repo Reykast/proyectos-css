@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPRO Audifonos</title>
+    <link rel="stylesheet" href="./TechPRO Audifonos_files/normalize.css">
+    <link rel="stylesheet" href="./TechPRO Audifonos_files/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./TechPRO Audifonos_files/css2" rel="stylesheet">
+</head>
+
+
+<body>
+    <header class="header">
+
+        <div class="contenedor contenido-header">
+            <div class="imagen-header">
+                <picture>   
+                    <source sizes="1920w" srcset="img/header.avif" type="image/avif">
+
+                    <source sizes="1920w" srcset="/img/header.webp" type="image/webp">
+
+                    <source sizes="1920w" srcset="/img/header.png" type="image/jpeg">
+
+                    <img loading="lazy" src="./TechPRO Audifonos_files/header.png" width="1000" heigh="500">
+                </picture>
+            </div> <!--imagen de header-->
+
+            <div class="texto-header">
+                <p class="tagline-producto">Sonido Profesional</p>
+
+                <h1 class="nombre-producto degradado-verde">TechPRO</h1>
+
+                <p class="descripcion-producto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero vitae eaque quod animi.</p>
+            
+                <p class="precio-producto">Desde <span>$299</span></p>
+                
+            </div>
+        </div>
+    </header>
+
+    <section class="contenedor iconos"> 
+        <div class="icono"><!--se hace un div a parte para los iconos primero-->
+            <img src="./TechPRO Audifonos_files/icono-sonido.svg" alt="imagen icono">
+                <h3>Gran Sonido</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consequatur aut dignissimos magnam nam laudantium fugit perferendis est consectetur velit</p>
+            </div>
+        
+   
+        <div class="icono">
+            <img src="./TechPRO Audifonos_files/icono-garantia.svg" alt="imagen icono">
+            <h3>Garantia de por Vida</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consequatur aut dignissimos magnam nam laudantium fugit perferendis est consectetur velit</p>
+        </div>
+
+        <div class="icono">
+            <img src="./TechPRO Audifonos_files/icono-bateria.svg" alt="imagen icono">
+            <h3>+20 horas de bateria</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consequatur aut dignissimos magnam nam laudantium fugit perferendis est consectetur velit</p>
+        </div>
+    </section>
+
+    <section class="sobre-tech"> <!--para acotar el contenido mientras el fondo y las imagenes se expandan a los bordes-->
+        <div class=" contenedor sobre-tech-grid"> 
+            <div class="texto-sobre-tech">
+                <h2>Sobre los<span> TechPRO</span></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odit deserunt quasi dicta, non blanditiis quas, repellendus dolorem suscipit animi perferendis sapiente impedit rerum recusandae quaerat est saepe qu</p>
+            </div>
+        </div>
+    </section>
+
+    <main class="contenedor modelos">
+        <h2 class="text-center degradado-verde header-modelos"> Elige tus TechPRO</h2>
+        <div class="listado-modelos">
+            <div class="modelo modelo-x">
+                <h3>TechPRO X</h3>
+                <p class="precio">$299</p>
+            </div>
+
+            <div class="modelo modelo-y">
+                <h3>TechPRO Y</h3>
+                <p class="precio">$399</p>
+            </div>
+
+            <div class="modelo modelo-z">
+                <h3>TechPRO Z</h3>
+                <p class="precio">$499</p>
+            </div>
+        </div>
+    </main>
+
+    <section class="newsletter">
+        <div class="contenido-newsletter contenedor">
+            <div class="texto-newsletter">
+                <h3>Recibe Actualizaciones</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim nulla nemo cumque eum numquam inventore ex voluptate facere sint repellendus, hic tempore corrupti, molestiae minima quasi. Et blanditiis dolores dignissimos.</p>
+
+                <form class="formulario">
+                    <div class="input">
+                        <input type="text" placeholder="Tu Correo electrónico">
+                    </div>
+
+                    <input type="submit" value="Inscribirme">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p> Todos los derechos reservados</p>
+    </footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
